@@ -9,11 +9,24 @@ A deep learning recommendation system that helps patients find hospitals based o
 ## 🏥 Overview
 
 This project leverages the Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) dataset to create a sophisticated recommendation engine. By combining collaborative filtering techniques with geospatial awareness, we provide personalized hospital recommendations that balance quality metrics with practical location considerations.
+This project implements a collaborative filtering recommendation system utilizing deep learning techniques (PyTorch) to help:
+- **Patients** find hospitals that best align with their healthcare quality preferences.
+- **Healthcare Administrators** benchmark their facilities and identify areas for improvement.
+
+The system leverages the **Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)** dataset from the Centers for Medicare & Medicaid Services (CMS).
 
 Our model achieves remarkable performance (R² of 0.9995, RMSE of 0.0218) and offers valuable insights for both patients seeking healthcare and administrators looking to improve patient experience.
 
 ![Model Architecture](path/to/model_architecture.png)
 
+## Business Objectives
+
+1. **Personalize recommendations** based on patient care quality preferences.
+2. **Benchmark hospitals** to identify similar facilities and best practices.
+3. **Predict patient satisfaction** effectively.
+4. Provide **interactive insights** into hospital performance.
+5. Empower **data-driven decision-making** for healthcare stakeholders.
+   
 ## ✨ Features
 
 - **Personalized Recommendations**: Matches hospitals to patient care priorities (nurse communication, doctor communication, cleanliness, etc.)
@@ -24,10 +37,14 @@ Our model achieves remarkable performance (R² of 0.9995, RMSE of 0.0218) and of
 
 ## 📊 Data
 
+- **Dataset:** Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)
+- **Provided by:** [The Centers for Medicare & Medicaid Services (CMS)](https://data.cms.gov/provider-data/topics/hospitals/hcahps/)
+
 The system uses the HCAHPS survey dataset from CMS, which includes:
 - Patient satisfaction scores across 10 care dimensions
 - Data from 4,780 healthcare facilities across the United States
 - Enhanced with geospatial features (coordinates, distances, hospital density)
+
 
 ## 🛠️ Technologies
 
@@ -38,12 +55,23 @@ The system uses the HCAHPS survey dataset from CMS, which includes:
 - **Plotly/Matplotlib**: Data visualization
 - **Geopy**: Geographical data processing
 
+## Methodology
+
+1. **Data Preparation**
+   - Topic Mapping and NLP categorization.
+   - Sentiment analysis using DistilBERT transformer.
+   - Generation of sentiment and quantitative scores from qualitative data.
+
+2. **Deep Learning Model**
+   - PyTorch-based Neural Collaborative Filtering model.
+   - Fine-tuned for improved accuracy and interpretability.
+
 ## 🔧 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hospital-recommendation-system.git
-cd hospital-recommendation-system
+git clone https://github.com/esengendo/spatial-hospital-recommendation-system.git
+cd Spatial-Aware Hospital Recommendation System
 
 # Create and activate virtual environment
 python -m venv venv
@@ -98,17 +126,34 @@ This opens a browser-based interface where you can:
 - View recommended hospitals on an interactive map
 - Explore detailed information about each recommendation
 
-## 📈 Performance
+## 📈 Model Performance Metrics
 
 The model demonstrates exceptional performance across multiple metrics:
 
-| Metric | Value |
-|--------|-------|
-| RMSE   | 0.0218 |
-| MAE    | 0.0168 |
-| R²     | 0.9995 |
-| F1 Score | 0.7630 |
 
+| Metric                  | Score  |
+|-------------------------|--------|
+| Root Mean Square Error (RMSE) | 0.0218 |
+| Mean Absolute Error (MAE)     | 0.0168 |
+| Mean Sentiment Accuracy       | 92.3% |
+| Precision                     | 89.5% |
+| Recall                        | 84.7% |
+| F1 Score                      | 87.3% |
+
+These metrics confirm the successful achievement of our objectives.
+
+## Project Impact
+The developed recommendation system provides:
+- Enhanced patient satisfaction through personalized recommendations.
+- Strategic insights for hospital benchmarking and quality improvement.
+- Improved resource allocation based on actionable insights.
+
+## Next Steps
+Future improvements could include:
+- Integrating real-time patient feedback.
+- Expansion to additional healthcare metrics.
+- Interactive web-based platform deployment.
+  
 ## 📖 Documentation
 
 Comprehensive documentation is available in the [docs](./docs) directory:
@@ -124,10 +169,10 @@ If you use this project in your research or application, please cite:
 
 ```
 @software{hospital_recommendation_system,
-  author = {Your Name},
+  author = {Emmanuel Sengendo},
   title = {Spatial-Aware Hospital Recommendation System},
-  year = {2023},
-  url = {https://github.com/yourusername/hospital-recommendation-system}
+  year = {2025},
+  url = {https://github.com/esengendo/spatial-hospital-recommendation-system}
 }
 ```
 
@@ -148,66 +193,39 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions or feedback, please contact:
-- Email: your.email@example.com
+- Email: esengendo@gmail.com
 - 
-LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+LinkedIn: [Emmanuel Sengendo](https://linkedin.com/in/esengendo)
 
 ---
+
+
+
+
+
+
+
+
 # Collaborative Filtering Hospital Recommendation System
 
 ---
 
 ## Overview
-This project implements a collaborative filtering recommendation system utilizing deep learning techniques (PyTorch) to help:
-- **Patients** find hospitals that best align with their healthcare quality preferences.
-- **Healthcare Administrators** benchmark their facilities and identify areas for improvement.
-
-The system leverages the **Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)** dataset from the Centers for Medicare & Medicaid Services (CMS).
 
 ---
 
-## Business Objectives
 
-1. **Personalize recommendations** based on patient care quality preferences.
-2. **Benchmark hospitals** to identify similar facilities and best practices.
-3. **Predict patient satisfaction** effectively.
-4. Provide **interactive insights** into hospital performance.
-5. Empower **data-driven decision-making** for healthcare stakeholders.
 
 ---
 
-## Data Source
-- **Dataset:** Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS)
-- **Provided by:** [CMS Provider Data Catalog](https://data.cms.gov/)
 
 ---
 
-## Methodology
-
-1. **Data Preparation**
-   - Topic Mapping and NLP categorization.
-   - Sentiment analysis using DistilBERT transformer.
-   - Generation of sentiment and quantitative scores from qualitative data.
-
-2. **Deep Learning Model**
-   - PyTorch-based Neural Collaborative Filtering model.
-   - Fine-tuned for improved accuracy and interpretability.
 
 ---
 
 ## Results
-### Model Performance Metrics
 
-| Metric                  | Score  |
-|-------------------------|--------|
-| Root Mean Square Error (RMSE) | 0.0218 |
-| Mean Absolute Error (MAE)     | 0.0168 |
-| Mean Sentiment Accuracy       | 92.3% |
-| Precision                     | 89.5% |
-| Recall                        | 84.7% |
-| F1 Score                      | 87.3% |
-
-These metrics confirm the successful achievement of our objectives.
 
 ### Visualization of Model Performance
 
@@ -215,11 +233,6 @@ These metrics confirm the successful achievement of our objectives.
 
 ---
 
-## Project Impact
-The developed recommendation system provides:
-- Enhanced patient satisfaction through personalized recommendations.
-- Strategic insights for hospital benchmarking and quality improvement.
-- Improved resource allocation based on actionable insights.
 
 ---
 
@@ -232,11 +245,7 @@ The developed recommendation system provides:
 
 ---
 
-## Next Steps
-Future improvements could include:
-- Integrating real-time patient feedback.
-- Expansion to additional healthcare metrics.
-- Interactive web-based platform deployment.
+
 
 ---
 
