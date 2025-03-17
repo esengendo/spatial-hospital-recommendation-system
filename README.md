@@ -163,6 +163,13 @@ Comprehensive documentation is available in the [docs](./docs) directory:
 - [Evaluation Methodology](./docs/evaluation.md)
 - [API Reference](./docs/api.md)
 
+## Repository Structure
+
+- **data/**: HCAHPS dataset and processed files
+- **notebooks/**: Exploratory Data Analysis, Model Training & Fine-tuning
+- **models/**: Saved PyTorch models
+- **reports/**: Project documentation, visualizations
+
 ## 📝 Citation
 
 If you use this project in your research or application, please cite:
@@ -193,38 +200,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions or feedback, please contact:
-- Email: esengendo@gmail.com
-- 
-LinkedIn: [Emmanuel Sengendo](https://linkedin.com/in/esengendo)
 
----
-
-
+- **Name:** Emmanuel Sengendo
+- **Position:** Data Scientist
+- **Contact:** esengendo@gmail.com | LinkedIn: [Emmanuel Sengendo](https://linkedin.com/in/esengendo)
+- Email: 
 
 
 
 
 
-
-# Collaborative Filtering Hospital Recommendation System
-
----
-
-## Overview
-
----
-
-
-
----
-
-
----
-
-
----
-
-## Results
 
 
 ### Visualization of Model Performance
@@ -234,30 +219,7 @@ LinkedIn: [Emmanuel Sengendo](https://linkedin.com/in/esengendo)
 ---
 
 
----
-
-## Repository Structure
-
-- **data/**: HCAHPS dataset and processed files
-- **notebooks/**: Exploratory Data Analysis, Model Training & Fine-tuning
-- **models/**: Saved PyTorch models
-- **reports/**: Project documentation, visualizations
-
----
-
-
-
----
-
-## Contacts
-For further details:
-- **Name:** [Your Name]
-- **Position:** Senior Data Scientist
-- **Contact:** [Your Email] | [LinkedIn Profile]
-
----
-
-© 2025 [Your Company/Team]. All rights reserved.
+© 2025 [Emmanuel Sengendo]. All rights reserved.
 
 
 Made with ❤️ for improving healthcare access and quality
