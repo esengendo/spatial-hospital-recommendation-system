@@ -154,16 +154,7 @@ Future improvements could include:
 - Expansion to additional healthcare metrics.
 - Interactive web-based platform deployment.
   
-## 📖 Documentation
-
-Comprehensive documentation is available in the [docs](./docs) directory:
-- [Data Processing](./docs/data_processing.md)
-- [Model Architecture](./docs/model_architecture.md)
-- [Training Process](./docs/training.md)
-- [Evaluation Methodology](./docs/evaluation.md)
-- [API Reference](./docs/api.md)
-
-## Repository Structure
+## 📖 Repository Structure
 
 - **data/**: HCAHPS dataset and processed files
 - **notebooks/**: Exploratory Data Analysis, Model Training & Fine-tuning
@@ -204,11 +195,6 @@ For questions or feedback, please contact:
 - **Name:** Emmanuel Sengendo
 - **Position:** Data Scientist
 - **Contact:** esengendo@gmail.com | LinkedIn: [Emmanuel Sengendo](https://linkedin.com/in/esengendo)
-- Email: 
-
-
-
-
 
 
 
